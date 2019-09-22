@@ -16,7 +16,6 @@ def reduceWidth(image, numPixels):
     for z in range(0, numPixels):
         energyMap = enMap.FindEnergyMap(newImage)
         energySums, energySumsCoords = compSeams.ComputeSeams(energyMap)
-        #FIXME CHECK THIS LINE OF CODE
         coord = np.argmin(energySums[row, :])
         redVal = redVal - 1
 
