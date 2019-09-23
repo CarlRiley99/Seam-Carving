@@ -13,7 +13,7 @@ Seam Carving is a content-aware resizing technique for images based on a paper w
 The paper defines the energy map of an single pixel of the image to be:
 
 [INSERT ENERGY IMAGE HERE]
-Syntax for adding image: ![Image description](link-to-image)
+Syntax for adding image: ![Energy Function defined by the paper](README_Assets/Energy_Function)
 
 For each pixel, we have to sum the partial derivatives of that pixel with respect to x and y. We do this for every pixel in the image. Finding the image derivtaive can be done by using the sobel operator (more info on that here: https://en.wikipedia.org/wiki/Sobel_operator). If done successfully, the result should look similar to this:
 
